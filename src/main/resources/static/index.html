@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Raccoon Auth Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #444;
+        }
+        a {
+            color: #2a7ae2;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐾 Raccoon Auth Server</h1>
+    <p>Keycloak 수준의 Spring Boot 인증 서버입니다.</p>
+
+    <h2>🔗 API 문서</h2>
+    <p><a href="/swagger-ui.html" target="_blank">Swagger UI 열기</a></p>
+
+    <h2>🛡️ 관리자용 API</h2>
+    <ul>
+        <li><code>GET /api/admin/users</code>: 사용자 목록 조회 (JWT + ROLE_ADMIN 필요)</li>
+        <li><code>POST /api/admin/role?username=...&role=...</code>: 사용자 권한 변경</li>
+    </ul>
+
+    <p>※ API 호출은 Swagger UI 또는 Postman을 통해 JWT 포함하여 테스트할 수 있습니다.</p>
+</body>
+</html>
